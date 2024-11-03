@@ -178,8 +178,7 @@
         0.4,
         0.508,
         1.0,
-        2.0,
-        3.0
+        2.0
       ],
       "via_dimensions": [
         {
@@ -448,14 +447,14 @@
       },
       {
         "bus_width": 12,
-        "clearance": 1.5,
+        "clearance": 1.0,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "AC",
+        "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
@@ -471,19 +470,19 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "AC",
+        "netclass": "HV",
         "pattern": "/N"
       },
       {
-        "netclass": "AC",
-        "pattern": "/PE"
-      },
-      {
-        "netclass": "AC",
+        "netclass": "HV",
         "pattern": "/L"
       },
       {
-        "netclass": "AC",
+        "netclass": "HV",
+        "pattern": "/PE"
+      },
+      {
+        "netclass": "HV",
         "pattern": "/L_LOAD"
       }
     ]
@@ -537,6 +536,14 @@
     [
       "d399a3b5-15d6-4695-995a-738788d518ed",
       ""
+    ],
+    [
+      "d4393315-b8fc-4b12-8535-0db2232ac966",
+      "IR receiver"
+    ],
+    [
+      "b6c7d5c5-3e61-4b12-ab83-a0688635b6d9",
+      "Power"
     ]
   ],
   "text_variables": {}
