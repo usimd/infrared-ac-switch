@@ -163,6 +163,7 @@
 		(property "Reference" "H1"
 			(at 0 -2.9 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "1e500b53-316a-4f96-a2a8-c71fa5c62e1c")
 			(effects
 				(font
@@ -337,6 +338,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eb860f53-91d4-4136-b644-b41d90e00b45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "LP2985-50DBVR"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "644cba7f-3b46-4e3f-ae21-c2cf07f3bc11")
 			(effects
 				(font
 					(size 1 1)
@@ -631,6 +645,19 @@
 				)
 			)
 		)
+		(property "MPN" "DMG2305UX-13"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "603655cb-46ca-4341-8860-acc34119aa1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/d4393315-b8fc-4b12-8535-0db2232ac966/cefaf8ed-298f-4f4b-bd31-336980eaf041")
 		(sheetname "IR receiver")
@@ -914,6 +941,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "59ea32a7-29d0-4a53-90df-a9fdc5901eed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "1935174"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfe895e5-1c13-4809-8ab0-22b0fc20ce9f")
 			(effects
 				(font
 					(size 1 1)
@@ -1540,18 +1580,6 @@
 				)
 			)
 		)
-		(property "MP" "TSSP4038"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d004996c-f2e7-4095-a7d5-0a21c84c4e28")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "PARTREV" "2.3"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1630,6 +1658,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8d7f7033-b950-4d29-b648-a24e12b1bbe0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TSSP4038"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "761fc010-172e-47a8-b669-966ccf720d69")
 			(effects
 				(font
 					(size 1 1)
@@ -1860,6 +1901,7 @@
 		(property "Reference" "H2"
 			(at 0 -2.9 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "c9a4d5c8-c9bd-4829-8d5a-102406730685")
 			(effects
 				(font
@@ -2045,6 +2087,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1fd4ef43-410b-4388-a0d3-c0c3e25e2bf1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "50SVPF68M"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa9bf78b-b779-4b56-adf3-75f6c352bc12")
 			(effects
 				(font
 					(size 1 1)
@@ -2942,6 +2997,19 @@
 				)
 			)
 		)
+		(property "MPN" "1935174"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9f930d4-471c-470b-a5e2-085169a036bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/865c4896-de0f-4e59-b865-ea4adbb6c57c")
 		(sheetname "Root")
@@ -3527,6 +3595,19 @@
 				)
 			)
 		)
+		(property "MPN" "CRF253-45T330R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "254ee2ac-9226-4ae0-8199-8a02f80c3a4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b6c7d5c5-3e61-4b12-ab83-a0688635b6d9/d82ad77e-09dd-4672-8adc-45e861b56d3f")
 		(sheetname "Power")
@@ -3666,6 +3747,7 @@
 		(property "Reference" "H3"
 			(at 0 -2.9 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "57047501-27c8-47c1-903a-69e06fcb0422")
 			(effects
 				(font
@@ -3779,6 +3861,7 @@
 		(property "Reference" "H4"
 			(at 0 -2.9 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "936b55a6-c965-4842-a61a-7c65a3ee33a5")
 			(effects
 				(font
@@ -3988,6 +4071,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d51a05f8-3795-4f94-8163-b484b591c64d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "MKX2AW32205B00KSSD"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9eb510c-2911-40f2-ba20-a2e62bbfd909")
 			(effects
 				(font
 					(size 1 1)
@@ -4244,6 +4340,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "49f7fd18-8ec2-494f-afc0-f6360e69afa8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "ABS6"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "497d67cf-5771-4278-8238-424e5a1b35df")
 			(effects
 				(font
 					(size 1 1)
@@ -4566,12 +4675,12 @@
 				)
 			)
 		)
-		(property "MPN2" "Littelfuse:395-0100-0000"
+		(property "MPN" "395-0100-0000"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d6524509-cc69-43d2-b3e3-9a3a79b1a1e2")
+			(uuid "af985b92-3ba3-4c7b-a345-31f26d069183")
 			(effects
 				(font
 					(size 1 1)
@@ -4799,7 +4908,7 @@
 				)
 			)
 		)
-		(property "Description" "\nFeatures ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L\n"
+		(property "Description" "Features ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L"
 			(at 51.20145 145.40145 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4859,18 +4968,6 @@
 				)
 			)
 		)
-		(property "MP" "ASO242"
-			(at 51.20145 145.40145 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "457c1f3a-7052-4aa1-ab7c-3759e2ae8678")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "MPN1" "Sensata:ASO242"
 			(at 51.20145 145.40145 0)
 			(layer "F.Fab")
@@ -4912,6 +5009,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "231bf80c-908f-41b6-a7b8-43c941bd98fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "ASO242"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f30b1b6-0ae0-4e0c-b573-832be6512364")
 			(effects
 				(font
 					(size 1 1)
@@ -5198,6 +5308,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "22b3610d-7c70-4abd-b658-05742b4f892e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "MM1Z4734A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d91108c4-6e76-4a27-bcac-da2be6c3585c")
 			(effects
 				(font
 					(size 1 1)

@@ -894,7 +894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nFeatures ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L\n"
+		(property "Description" "Features ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L"
 			(at 95.25 50.8 0)
 			(effects
 				(font
@@ -954,7 +954,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "ASO242"
+		(property "MPN" "ASO242"
 			(at 95.25 50.8 0)
 			(effects
 				(font
@@ -1141,6 +1141,15 @@
 			)
 		)
 		(property "SKU1" "Conrad:744167 - 62"
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1935174"
 			(at 72.39 68.58 0)
 			(effects
 				(font
@@ -1430,6 +1439,15 @@
 			)
 		)
 		(property "SKU1" "Conrad:744167 - 62"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1935174"
 			(at 142.24 68.58 0)
 			(effects
 				(font

@@ -1149,7 +1149,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "TSSP4038"
+		(property "MPN" "TSSP4038"
 			(at 80.01 55.88 0)
 			(effects
 				(font
@@ -1477,6 +1477,15 @@
 			)
 		)
 		(property "MPN1" "Diodes:DMG2305UX-13"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMG2305UX-13"
 			(at 118.11 55.88 0)
 			(effects
 				(font
