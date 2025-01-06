@@ -28,3 +28,12 @@
 # Exported BOM files
 *.xml
 *.csv
+
+# FreeCad auto backup
+**/*.FCBak
+
+# Do not track PCB 3D models (potentially restricted by license)
+**/*.stp
+**/*.step
+**/*.STEP
+!case/*.step

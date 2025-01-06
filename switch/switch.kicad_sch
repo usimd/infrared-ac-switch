@@ -1,609 +1,1576 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid d399a3b5-15d6-4695-995a-738788d518ed)
-
-  (paper "A5")
-
-  (title_block
-    (title "IR-based AC switch")
-    (date "2023-10-17")
-    (comment 1 "https://aisler.net/p/HPFIOOUA")
-  )
-
-  (lib_symbols
-    (symbol "ASO242:ASO242" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "K" (at -5.08 8.382 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Value" "ASO242" (at -5.08 -10.16 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Footprint" "ASO242:ASO242" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "DigiKey_Part_Number" "CC1336-ND" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "SnapEDA_Link" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=snap" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "Description" "\nFeatures ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L\n" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "LIB" "REL" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "Package" "None" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "MF" "Crydom" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "MP" "ASO242" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (property "Check_prices" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=eda" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) (justify bottom) hide)
-      )
-      (symbol "ASO242_0_0"
-        (rectangle (start -5.08 -7.62) (end 5.08 7.62)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin bidirectional line (at 7.62 5.08 180) (length 2.54)
-          (name "AC" (effects (font (size 1.016 1.016))))
-          (number "1" (effects (font (size 1.016 1.016))))
-        )
-        (pin bidirectional line (at 7.62 2.54 180) (length 2.54)
-          (name "LOAD" (effects (font (size 1.016 1.016))))
-          (number "2" (effects (font (size 1.016 1.016))))
-        )
-        (pin bidirectional line (at 7.62 -2.54 180) (length 2.54)
-          (name "+" (effects (font (size 1.016 1.016))))
-          (number "3" (effects (font (size 1.016 1.016))))
-        )
-        (pin bidirectional line (at 7.62 -5.08 180) (length 2.54)
-          (name "-" (effects (font (size 1.016 1.016))))
-          (number "4" (effects (font (size 1.016 1.016))))
-        )
-      )
-    )
-    (symbol "Connector_Generic:Conn_01x03" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x03" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x03_1_1"
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 3.81) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 81.28 71.12) (diameter 0) (color 0 0 0 0)
-    (uuid 63ef7f04-c71f-4c43-8731-f002e51e4d7b)
-  )
-  (junction (at 83.82 66.04) (diameter 0) (color 0 0 0 0)
-    (uuid a421b0d8-5f4e-498e-9e20-cbee51fbe7be)
-  )
-
-  (wire (pts (xy 81.28 48.26) (xy 81.28 71.12))
-    (stroke (width 0) (type default))
-    (uuid 01e4f32a-9e65-4a82-b740-b8ae450af7a3)
-  )
-  (wire (pts (xy 83.82 45.72) (xy 83.82 66.04))
-    (stroke (width 0) (type default))
-    (uuid 060eb0c5-3359-4de5-931f-84e5bb242f88)
-  )
-  (wire (pts (xy 80.01 45.72) (xy 83.82 45.72))
-    (stroke (width 0) (type default))
-    (uuid 207a6b6b-7f5f-45dc-9fbc-07d79d8c1670)
-  )
-  (wire (pts (xy 111.76 45.72) (xy 111.76 52.07))
-    (stroke (width 0) (type default))
-    (uuid 3981268f-226b-4cd2-9eaf-614273689f3e)
-  )
-  (wire (pts (xy 77.47 66.04) (xy 83.82 66.04))
-    (stroke (width 0) (type default))
-    (uuid 54fbcd9c-48d7-47f2-b40e-ae5f9254aebb)
-  )
-  (wire (pts (xy 83.82 66.04) (xy 102.87 66.04))
-    (stroke (width 0) (type default))
-    (uuid 8373c286-1815-4b20-9524-1106cd301a2f)
-  )
-  (wire (pts (xy 81.28 71.12) (xy 137.16 71.12))
-    (stroke (width 0) (type default))
-    (uuid 9407cdb6-2cbe-439f-aed6-8a8e33a6cc81)
-  )
-  (wire (pts (xy 80.01 48.26) (xy 81.28 48.26))
-    (stroke (width 0) (type default))
-    (uuid 9b1d004c-63d5-4d6f-9cb2-a98d323fc30d)
-  )
-  (wire (pts (xy 102.87 66.04) (xy 102.87 55.88))
-    (stroke (width 0) (type default))
-    (uuid a19523fa-38ab-4cd9-a9e8-2ae096f52624)
-  )
-  (wire (pts (xy 77.47 68.58) (xy 137.16 68.58))
-    (stroke (width 0) (type default))
-    (uuid c2c3118b-16fd-43cf-b166-50c4439acc6e)
-  )
-  (wire (pts (xy 105.41 53.34) (xy 105.41 66.04))
-    (stroke (width 0) (type default))
-    (uuid c3238025-9edb-403c-919d-529549b82572)
-  )
-  (wire (pts (xy 102.87 45.72) (xy 111.76 45.72))
-    (stroke (width 0) (type default))
-    (uuid c8b8ffa4-9cf5-40f8-9c47-b5b83c58a17b)
-  )
-  (wire (pts (xy 102.87 53.34) (xy 105.41 53.34))
-    (stroke (width 0) (type default))
-    (uuid cd2cd132-9cce-469b-a92f-454d626add1f)
-  )
-  (wire (pts (xy 102.87 48.26) (xy 120.65 48.26))
-    (stroke (width 0) (type default))
-    (uuid dbe77ae5-6743-4c32-b64b-1fa9865383d1)
-  )
-  (wire (pts (xy 77.47 71.12) (xy 81.28 71.12))
-    (stroke (width 0) (type default))
-    (uuid de2607c8-9d14-4a5f-8fd5-ec69db86e29c)
-  )
-  (wire (pts (xy 105.41 66.04) (xy 137.16 66.04))
-    (stroke (width 0) (type default))
-    (uuid fa566f50-a432-476d-8ba4-e863585c93a3)
-  )
-
-  (label "N" (at 77.47 71.12 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 698cad19-eca6-47c7-b3bb-3aa383f768a8)
-  )
-  (label "PE" (at 77.47 68.58 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 69f50ea7-0c17-4fd1-a4cb-94c1ba88cbba)
-  )
-  (label "L" (at 77.47 66.04 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 829b87c9-1acd-4cfa-93d3-ff272e607256)
-  )
-  (label "L_LOAD" (at 105.41 66.04 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ecbf9d96-3001-4e63-b334-6278623a76ff)
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 52.07 109.22 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 10021dd9-f4d5-4f77-a3af-7604d8ab9718)
-    (property "Reference" "H1" (at 54.61 107.95 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 54.61 110.49 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965" (at 52.07 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 52.07 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 52.07 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ASO242:ASO242") (at 95.25 50.8 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 31240f77-7de2-4ae4-8aec-9925127122ab)
-    (property "Reference" "K1" (at 95.25 63.5 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "ASO242" (at 95.25 60.96 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "switch:ASO242" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Datasheet" "" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DigiKey_Part_Number" "CC1336-ND" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "SnapEDA_Link" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=snap" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Description" "\nFeatures ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L\n" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "LIB" "REL" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Package" "None" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "MF" "Crydom" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "MP" "ASO242" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "Check_prices" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=eda" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) (justify bottom) hide)
-    )
-    (property "MPN1" "Sensata:ASO242" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "SKU1" "Conrad:188012" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5c8dd0de-faf1-4761-aaee-21e630b84080))
-    (pin "2" (uuid 4b4a4eed-f2aa-42d6-8347-673aaf1fecf6))
-    (pin "3" (uuid 662eb04e-8517-414f-bbc8-8bd833a352e0))
-    (pin "4" (uuid 2bc7e30c-73ab-4393-adc0-e863a06add10))
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "K1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 52.07 119.38 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 698246bb-8bd8-497f-bc32-36fc77177f45)
-    (property "Reference" "H3" (at 54.61 118.11 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 54.61 120.65 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965" (at 52.07 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 52.07 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 52.07 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "H3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x03") (at 72.39 68.58 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 865c4896-de0f-4e59-b865-ea4adbb6c57c)
-    (property "Reference" "J1" (at 72.39 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1935174" (at 72.39 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" (at 72.39 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://asset.conrad.com/media10/add/160267/c1/-/de/000744167DS01/datenblatt-744167-phoenix-contact-1935174-schraubklemmblock-250-mm-polzahl-num-3-gruen-1-st.pdf" (at 72.39 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN1" "Phoenix Contact:1935174" (at 72.39 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 72.39 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "SKU1" "Conrad:744167 - 62" (at 72.39 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6288d637-9f58-4e23-b3d1-874d0da38711))
-    (pin "2" (uuid e9b72418-6f73-41d2-a06a-fb167c221203))
-    (pin "3" (uuid 8d2c5beb-7b76-4861-a0b7-2ab32e83ab80))
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "J1") (unit 1)
-        )
-      )
-      (project "emitter"
-        (path "/f2e6b1c3-09d0-4e3e-951a-95a5bf855d97"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 52.07 124.46 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8e5db761-bf33-41d8-bca9-0042c4743335)
-    (property "Reference" "H4" (at 54.61 123.19 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 54.61 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965" (at 52.07 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 52.07 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 52.07 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "H4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 111.76 52.07 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 91418bc8-245c-4b5d-8e5b-3ae47ec4a7e1)
-    (property "Reference" "#PWR04" (at 111.76 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 111.76 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 111.76 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 111.76 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d7259d3b-d022-4f5f-b201-e7e69cb18a17))
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 52.07 114.3 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c2446f51-0d27-48a1-b80a-694a07c551f7)
-    (property "Reference" "H2" (at 54.61 113.03 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 54.61 115.57 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965" (at 52.07 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 52.07 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 52.07 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x03") (at 142.24 68.58 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dbbc70fd-642c-483b-9049-2f4003eeba09)
-    (property "Reference" "J2" (at 142.24 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1935174" (at 142.24 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" (at 142.24 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://asset.conrad.com/media10/add/160267/c1/-/de/000744167DS01/datenblatt-744167-phoenix-contact-1935174-schraubklemmblock-250-mm-polzahl-num-3-gruen-1-st.pdf" (at 142.24 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "MPN1" "Phoenix Contact:1935174" (at 142.24 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Enable" "0" (at 142.24 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "SKU1" "Conrad:744167 - 62" (at 142.24 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0cbb728b-83c2-4866-aad3-411f89057a2b))
-    (pin "2" (uuid e6f2129f-cce6-4460-acbd-5a059755cbd6))
-    (pin "3" (uuid bee067d8-a552-46e7-9d56-010e98f3190e))
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed"
-          (reference "J2") (unit 1)
-        )
-      )
-      (project "emitter"
-        (path "/f2e6b1c3-09d0-4e3e-951a-95a5bf855d97"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 67.31 43.18) (size 12.7 7.62) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid b6c7d5c5-3e61-4b12-ab83-a0688635b6d9)
-    (property "Sheetname" "Power" (at 67.31 42.4684 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 67.31 51.3846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "L" bidirectional (at 80.01 45.72 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 7b24358d-c036-4bc6-9fe3-1133c1bda2fc)
-    )
-    (pin "N" bidirectional (at 80.01 48.26 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 4abb4386-4be1-47d1-bcac-58eae656db10)
-    )
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 120.65 45.72) (size 12.7 5.08) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid d4393315-b8fc-4b12-8535-0db2232ac966)
-    (property "Sheetname" "IR receiver" (at 120.65 45.0084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "sense.kicad_sch" (at 120.65 51.3846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SWITCH" output (at 120.65 48.26 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 658a44f4-3183-4838-a438-99b4eb985c7e)
-    )
-    (instances
-      (project "switch"
-        (path "/d399a3b5-15d6-4695-995a-738788d518ed" (page "2"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d399a3b5-15d6-4695-995a-738788d518ed")
+	(paper "A5")
+	(title_block
+		(title "IR-based AC switch")
+		(date "2023-10-17")
+		(rev "2")
+		(comment 1 "https://aisler.net/p/HPFIOOUA")
+		(comment 4 "230V AC mains switch activated by presence of a 38kHz IR signal")
+	)
+	(lib_symbols
+		(symbol "ASO242:ASO242"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at -5.08 8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "ASO242"
+				(at -5.08 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "ASO242:ASO242"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "\nFeatures ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L\n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DigiKey_Part_Number" "CC1336-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "LIB" "REL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MF" "Crydom"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "ASO242"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "ASO242_0_0"
+				(rectangle
+					(start -5.08 -7.62)
+					(end 5.08 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "AC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "LOAD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 81.28 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63ef7f04-c71f-4c43-8731-f002e51e4d7b")
+	)
+	(junction
+		(at 83.82 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a421b0d8-5f4e-498e-9e20-cbee51fbe7be")
+	)
+	(wire
+		(pts
+			(xy 81.28 48.26) (xy 81.28 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01e4f32a-9e65-4a82-b740-b8ae450af7a3")
+	)
+	(wire
+		(pts
+			(xy 83.82 45.72) (xy 83.82 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "060eb0c5-3359-4de5-931f-84e5bb242f88")
+	)
+	(wire
+		(pts
+			(xy 80.01 45.72) (xy 83.82 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "207a6b6b-7f5f-45dc-9fbc-07d79d8c1670")
+	)
+	(wire
+		(pts
+			(xy 111.76 45.72) (xy 111.76 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3981268f-226b-4cd2-9eaf-614273689f3e")
+	)
+	(wire
+		(pts
+			(xy 77.47 66.04) (xy 83.82 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54fbcd9c-48d7-47f2-b40e-ae5f9254aebb")
+	)
+	(wire
+		(pts
+			(xy 83.82 66.04) (xy 102.87 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8373c286-1815-4b20-9524-1106cd301a2f")
+	)
+	(wire
+		(pts
+			(xy 81.28 71.12) (xy 137.16 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9407cdb6-2cbe-439f-aed6-8a8e33a6cc81")
+	)
+	(wire
+		(pts
+			(xy 80.01 48.26) (xy 81.28 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b1d004c-63d5-4d6f-9cb2-a98d323fc30d")
+	)
+	(wire
+		(pts
+			(xy 102.87 66.04) (xy 102.87 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a19523fa-38ab-4cd9-a9e8-2ae096f52624")
+	)
+	(wire
+		(pts
+			(xy 77.47 68.58) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c3118b-16fd-43cf-b166-50c4439acc6e")
+	)
+	(wire
+		(pts
+			(xy 105.41 53.34) (xy 105.41 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3238025-9edb-403c-919d-529549b82572")
+	)
+	(wire
+		(pts
+			(xy 102.87 45.72) (xy 111.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b8ffa4-9cf5-40f8-9c47-b5b83c58a17b")
+	)
+	(wire
+		(pts
+			(xy 102.87 53.34) (xy 105.41 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd2cd132-9cce-469b-a92f-454d626add1f")
+	)
+	(wire
+		(pts
+			(xy 102.87 48.26) (xy 120.65 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbe77ae5-6743-4c32-b64b-1fa9865383d1")
+	)
+	(wire
+		(pts
+			(xy 77.47 71.12) (xy 81.28 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2607c8-9d14-4a5f-8fd5-ec69db86e29c")
+	)
+	(wire
+		(pts
+			(xy 105.41 66.04) (xy 137.16 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa566f50-a432-476d-8ba4-e863585c93a3")
+	)
+	(label "N"
+		(at 77.47 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "698cad19-eca6-47c7-b3bb-3aa383f768a8")
+	)
+	(label "PE"
+		(at 77.47 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69f50ea7-0c17-4fd1-a4cb-94c1ba88cbba")
+	)
+	(label "L"
+		(at 77.47 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "829b87c9-1acd-4cfa-93d3-ff272e607256")
+	)
+	(label "L_LOAD"
+		(at 105.41 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ecbf9d96-3001-4e63-b334-6278623a76ff")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 52.07 109.22 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10021dd9-f4d5-4f77-a3af-7604d8ab9718")
+		(property "Reference" "H1"
+			(at 54.61 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 54.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
+			(at 52.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ASO242:ASO242")
+		(at 95.25 50.8 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31240f77-7de2-4ae4-8aec-9925127122ab")
+		(property "Reference" "K1"
+			(at 95.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ASO242"
+			(at 95.25 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "switch:ASO242"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "\nFeatures ?DC Control, AC Output ?Triac (AO) or SCR (ASO) Output ?UL, CSA Approved ?Dimensions (L\n"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "CC1336-ND"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=snap"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LIB" "REL"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Crydom"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "ASO242"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/ASO242/Crydom/view-part/?ref=eda"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN1" "Sensata:ASO242"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU1" "Conrad:188012"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c8dd0de-faf1-4761-aaee-21e630b84080")
+		)
+		(pin "2"
+			(uuid "4b4a4eed-f2aa-42d6-8347-673aaf1fecf6")
+		)
+		(pin "3"
+			(uuid "662eb04e-8517-414f-bbc8-8bd833a352e0")
+		)
+		(pin "4"
+			(uuid "2bc7e30c-73ab-4393-adc0-e863a06add10")
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "K1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 52.07 119.38 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "698246bb-8bd8-497f-bc32-36fc77177f45")
+		(property "Reference" "H3"
+			(at 54.61 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 54.61 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
+			(at 52.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 72.39 68.58 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "865c4896-de0f-4e59-b865-ea4adbb6c57c")
+		(property "Reference" "J1"
+			(at 72.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1935174"
+			(at 72.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal"
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://octopart.com/datasheet/1935174-phoenix+contact-51306"
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN1" "Phoenix Contact:1935174"
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU1" "Conrad:744167 - 62"
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6288d637-9f58-4e23-b3d1-874d0da38711")
+		)
+		(pin "2"
+			(uuid "e9b72418-6f73-41d2-a06a-fb167c221203")
+		)
+		(pin "3"
+			(uuid "8d2c5beb-7b76-4861-a0b7-2ab32e83ab80")
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+			(project "emitter"
+				(path "/f2e6b1c3-09d0-4e3e-951a-95a5bf855d97"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 52.07 124.46 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e5db761-bf33-41d8-bca9-0042c4743335")
+		(property "Reference" "H4"
+			(at 54.61 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 54.61 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
+			(at 52.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91418bc8-245c-4b5d-8e5b-3ae47ec4a7e1")
+		(property "Reference" "#PWR04"
+			(at 111.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7259d3b-d022-4f5f-b201-e7e69cb18a17")
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 52.07 114.3 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2446f51-0d27-48a1-b80a-694a07c551f7")
+		(property "Reference" "H2"
+			(at 54.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 54.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 142.24 68.58 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbbc70fd-642c-483b-9049-2f4003eeba09")
+		(property "Reference" "J2"
+			(at 142.24 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1935174"
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://asset.conrad.com/media10/add/160267/c1/-/de/000744167DS01/datenblatt-744167-phoenix-contact-1935174-schraubklemmblock-250-mm-polzahl-num-3-gruen-1-st.pdf"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN1" "Phoenix Contact:1935174"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU1" "Conrad:744167 - 62"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cbb728b-83c2-4866-aad3-411f89057a2b")
+		)
+		(pin "2"
+			(uuid "e6f2129f-cce6-4460-acbd-5a059755cbd6")
+		)
+		(pin "3"
+			(uuid "bee067d8-a552-46e7-9d56-010e98f3190e")
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+			(project "emitter"
+				(path "/f2e6b1c3-09d0-4e3e-951a-95a5bf855d97"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 67.31 43.18)
+		(size 12.7 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b6c7d5c5-3e61-4b12-ab83-a0688635b6d9")
+		(property "Sheetname" "Power"
+			(at 67.31 42.4684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 67.31 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "L" bidirectional
+			(at 80.01 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7b24358d-c036-4bc6-9fe3-1133c1bda2fc")
+		)
+		(pin "N" bidirectional
+			(at 80.01 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4abb4386-4be1-47d1-bcac-58eae656db10")
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 45.72)
+		(size 12.7 5.08)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d4393315-b8fc-4b12-8535-0db2232ac966")
+		(property "Sheetname" "IR receiver"
+			(at 120.65 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sense.kicad_sch"
+			(at 120.65 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SWITCH" output
+			(at 120.65 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "658a44f4-3183-4838-a438-99b4eb985c7e")
+		)
+		(instances
+			(project "switch"
+				(path "/d399a3b5-15d6-4695-995a-738788d518ed"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
